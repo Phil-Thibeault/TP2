@@ -26,6 +26,9 @@ get_header();
 				if( in_category('nouvelle') || in_category('evenement')){
 					get_template_part( 'template-parts/content/content', 'single-nouvelle' );
 				}
+				else{
+					get_template_part( 'template-parts/content/content', 'single' );
+				}
 			
 				if ( is_singular( 'attachment' ) ) {
 					// Parent post navigation.
