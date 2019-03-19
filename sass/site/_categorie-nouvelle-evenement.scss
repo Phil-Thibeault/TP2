@@ -1,0 +1,36 @@
+.wp-block-media-text{
+    .imageArticle{
+        border: 1px solid black;
+        transform: rotateY(-180deg);
+        perspective: 1000px;
+        animation: animImage 2s forwards;
+        .attachment-large{
+            box-shadow: -10px -10px 10px black;
+        }
+    }
+
+    .textArticle{
+        opacity: 0;
+        animation: fadeTexte 1s 2s forwards;
+    }
+}
+
+@keyframes animImage{
+    from{
+        transform: rotateY(-180deg);
+    }
+
+    to{
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes fadeTexte{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}

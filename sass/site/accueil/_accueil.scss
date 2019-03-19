@@ -1,6 +1,10 @@
 @import '../../mixins/utilities';
 @import '../../variables-site/variables-site';
 
+.site{
+    background-color: #BFD8BD;
+}
+
 .entry .entry-content .has-large-font-size {
     font-size: 1em; 
 }
@@ -13,6 +17,35 @@
 .separateur{
     width: 100vw !important;
     max-width: 80vw !important;
+}
+
+.texte p{
+    background-color: #77BFA3 !important;
+    border: 8px inset #98C9A3;
+}
+
+.titreSection{
+    font-size: 2em;
+    margin-bottom: 0 !important;
+}
+
+.lienArticle{
+    text-decoration: none !important;
+    color: black;
+    font-style: italic;
+
+    &:visited{
+        color: #333;
+    }
+
+    img{
+        filter: sepia();
+        transition: filter 1s;
+
+        &:hover{
+            filter: none;
+        }
+    }
 }
 
 @include media(mobile){

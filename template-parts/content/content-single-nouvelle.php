@@ -20,7 +20,7 @@
 
 	<div class="entry-content">
 		<div class="wp-block-media-text alignwide" style="grid-template-columns:30% auto">
-			<figure class="wp-block-media-text__media">
+			<figure class="wp-block-media-text__media imageArticle">
 			<?php
 				$image = get_field('mon_image');
 				$size = 'large'; // (thumbnail, medium, large, full or custom size)
@@ -29,7 +29,7 @@
 				}
 			?>
 			</figure>
-			<div class="wp-block-media-text__content">
+			<div class="wp-block-media-text__content textArticle">
 				<?php
 					the_content();
 				?>
