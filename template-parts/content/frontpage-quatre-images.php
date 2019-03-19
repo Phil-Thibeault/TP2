@@ -11,9 +11,9 @@
 ?>
 
 <div class="wp-block-column">
-	<figure class="wp-block-image">
+	<figure class="wp-block-image nouvelle">
 
-		<a href="<?php the_permalink(); ?>">
+		<a href="<?php the_permalink(); ?>" class="lienArticle">
 			<?php 
 				the_title();
 			?>

@@ -51,7 +51,8 @@ get_header();
 	 wp_reset_postdata();
 	}
 ?>
-		</div>	
+		</div>
+		<hr class="separateur"/>	
 
 
 <!--  ////////////////////// La troisième boucle pour les articles de catégorie  événement  -->
