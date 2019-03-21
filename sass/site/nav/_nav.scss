@@ -1,0 +1,14 @@
+.main-navigation{
+    .menu-nav-principale-container{
+        .menu-nav-principale{
+            li{
+                a{
+                    color: purple;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
