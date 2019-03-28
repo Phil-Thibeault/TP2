@@ -8,6 +8,12 @@ $couleurLien: #800080;
 $couleurHover: #ee5dee;
 $bgLiens: rgba(0, 0, 0, 0.6);
 
+$colorNav1: #18CCCA;
+$colorNav2: #5F9998;
+$colorNav3: #38FF8C;
+$colorNav4: #FF789A;
+$colorNav5: #CC189F;
+
 %link {
     color: $couleurLien !important;
 }
@@ -18,6 +24,10 @@ $bgLiens: rgba(0, 0, 0, 0.6);
 }
 
 .main-navigation{
+    .svg-icon{
+        color: $colorNav1;
+        animation: 5s ease 0s animSVG infinite !important;
+    }
     .menu-nav-principale-container{
         .main-menu{
             li{
@@ -67,4 +77,26 @@ $bgLiens: rgba(0, 0, 0, 0.6);
         background: $bgLiens;
         font-size: 1em;
     }
-  }
+}
+
+@keyframes animSVG {
+    0% {
+        color: $colorNav1;
+    }
+    
+    20% {
+        color: $colorNav2;
+    }
+    
+    40% {
+        color: $colorNav3;
+    }
+
+    60%{
+        color: $colorNav4;
+    }
+
+    80%{
+        color: $colorNav5;
+    }
+}

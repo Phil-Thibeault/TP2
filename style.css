@@ -703,6 +703,12 @@ Code personnalisé pour tout ce qui a trait à la navigation.
   color: #ee5dee !important;
 }
 
+.main-navigation .svg-icon {
+  color: #18CCCA;
+  -webkit-animation: 5s ease 0s animSVG infinite !important;
+          animation: 5s ease 0s animSVG infinite !important;
+}
+
 .main-navigation .sub-menu {
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -780,6 +786,42 @@ Code personnalisé pour tout ce qui a trait à la navigation.
   50% {
     background: rgba(0, 0, 0, 0.6);
     font-size: 1em;
+  }
+}
+
+@-webkit-keyframes animSVG {
+  0% {
+    color: #18CCCA;
+  }
+  20% {
+    color: #5F9998;
+  }
+  40% {
+    color: #38FF8C;
+  }
+  60% {
+    color: #FF789A;
+  }
+  80% {
+    color: #CC189F;
+  }
+}
+
+@keyframes animSVG {
+  0% {
+    color: #18CCCA;
+  }
+  20% {
+    color: #5F9998;
+  }
+  40% {
+    color: #38FF8C;
+  }
+  60% {
+    color: #FF789A;
+  }
+  80% {
+    color: #CC189F;
   }
 }
 
