@@ -1,0 +1,29 @@
+.site-main{
+    article{
+        color: white;
+        text-shadow: 0 0 2px black;
+
+        .entry-header{
+            .entry-title{
+                border: 2px solid white;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+
+
+        .entry-content{
+            border: 3px solid white;
+        }
+    }
+}
+
+.post-title{
+    color: white;
+    text-shadow: 0 0 2px black;
+
+    &:hover{
+        color: black;
+        text-shadow: 0 0 2px white;
+    }
+}
