@@ -17,6 +17,9 @@
 .nouvelle, .evenement{
     text-align: center;       
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    .lienArticle{
+        color: white !important;
+    }
 }
 
 .separateur{
@@ -29,8 +32,8 @@
     transform: translateX(100%);
     transition: 1s opacity ease-out, 1s transform ease-out;
     p{
-        background-color: #77BFA3 !important;
-        border: 8px inset #98C9A3;
+        background-color: #7CBAAA !important;
+        border: 8px inset #4A8A7C;
     }
 }
 

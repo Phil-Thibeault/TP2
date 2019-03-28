@@ -52,7 +52,6 @@ get_header();
 	}
 ?>
 		</div>
-		<hr class="separateur"/>	
 
 
 <!--  ////////////////////// La troisième boucle pour les articles de catégorie  événement  -->

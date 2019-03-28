@@ -978,6 +978,10 @@ http: //krasimirtsonev.com/blog/article/SASS-content-directive-is-a-wonderful-th
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.nouvelle .lienArticle, .evenement .lienArticle {
+  color: white !important;
+}
+
 .separateur {
   width: 100vw !important;
   max-width: 80vw !important;
@@ -994,8 +998,8 @@ http: //krasimirtsonev.com/blog/article/SASS-content-directive-is-a-wonderful-th
 }
 
 .texte p {
-  background-color: #77BFA3 !important;
-  border: 8px inset #98C9A3;
+  background-color: #7CBAAA !important;
+  border: 8px inset #4A8A7C;
 }
 
 .texteApparait {
