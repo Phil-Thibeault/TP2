@@ -10,14 +10,17 @@ window.addEventListener('load',function(){
      * Animation personnalisée
      */
     let aImg = document.querySelectorAll("img");
+    let aTexte = document.getElementsByClassName("texte");
     window.addEventListener("scroll", function(){
         var windowPos = window.scrollY;
-        var offset = aImg[0].offsetTop;
-        console.log(offset);
-        console.log(windowPos);
         for(let i = 0; i < aImg.length; i++){
             if(windowPos >= aImg[i].offsetTop - (aImg[i].offsetHeight * 2)){
                 aImg[i].classList.add('imgApparait');
+            }
+        }
+        for(let i = 0; i < aTexte.length; i++){
+            if(windowPos >= aTexte[i].offsetTop - (aTexte[i].offsetHeight)){
+                aTexte[i].classList.add('texteApparait');
             }
         }
     });

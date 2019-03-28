@@ -19,9 +19,19 @@
     max-width: 80vw !important;
 }
 
-.texte p{
-    background-color: #77BFA3 !important;
-    border: 8px inset #98C9A3;
+.texte{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 1s opacity ease-out, 1s transform ease-out;
+    p{
+        background-color: #77BFA3 !important;
+        border: 8px inset #98C9A3;
+    }
+}
+
+.texteApparait{
+    opacity: 1 !important;
+    transform: translateX(0);
 }
 
 .titreSection{

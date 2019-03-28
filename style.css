@@ -903,9 +903,25 @@ http: //krasimirtsonev.com/blog/article/SASS-content-directive-is-a-wonderful-th
   max-width: 80vw !important;
 }
 
+.texte {
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 1s opacity ease-out, 1s -webkit-transform ease-out;
+  transition: 1s opacity ease-out, 1s -webkit-transform ease-out;
+  transition: 1s opacity ease-out, 1s transform ease-out;
+  transition: 1s opacity ease-out, 1s transform ease-out, 1s -webkit-transform ease-out;
+}
+
 .texte p {
   background-color: #77BFA3 !important;
   border: 8px inset #98C9A3;
+}
+
+.texteApparait {
+  opacity: 1 !important;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .titreSection {
