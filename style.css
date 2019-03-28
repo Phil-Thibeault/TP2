@@ -1091,6 +1091,14 @@ http: //krasimirtsonev.com/blog/article/SASS-content-directive-is-a-wonderful-th
           box-shadow: 0 0 20px 5px black;
 }
 
+.liste-cours .entry-title a {
+  color: white;
+}
+
+.liste-cours .entry-title a h3, .liste-cours .entry-title a h4 {
+  text-shadow: 0 0 2px black;
+}
+
 @-webkit-keyframes anim1 {
   from {
     -webkit-transform: translateY(-100vh) rotateX(0deg);

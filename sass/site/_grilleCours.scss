@@ -7,5 +7,13 @@
             border: 1px solid black;
             box-shadow: 0 0 20px 5px black;
         }
+
+        a{
+            color: white;
+
+            h3, h4{
+                text-shadow: 0 0 2px black;
+            }
+        }
     }
 }
