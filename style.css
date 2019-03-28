@@ -1204,6 +1204,15 @@ http: //krasimirtsonev.com/blog/article/SASS-content-directive-is-a-wonderful-th
 .site-footer .site-info {
   width: 90%;
   margin: 5vh auto !important;
+  color: black !important;
+}
+
+.site-footer .site-info a {
+  margin: 5px !important;
+}
+
+.site-footer .site-info a:hover {
+  text-decoration: underline !important;
 }
 
 @-webkit-keyframes anim1 {

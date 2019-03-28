@@ -4,5 +4,13 @@
     .site-info{
         width: 90%;
         margin: 5vh auto !important;
+        color: black !important;
+
+        a{
+            margin: 5px !important;
+            &:hover{
+                text-decoration: underline !important;
+            }
+        }
     }
 }
