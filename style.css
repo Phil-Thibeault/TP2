@@ -600,6 +600,8 @@ body.page .main-navigation {
 ## Header
 --------------------------------------------------------------*/
 .site-header.featured-image {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -886,7 +888,16 @@ http: //krasimirtsonev.com/blog/article/SASS-content-directive-is-a-wonderful-th
 }
 
 .site {
-  background-color: #BFD8BD;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#130f10+54,a89fcc+100 */
+  background: #130f10;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(54%, #130f10), to(#a89fcc));
+  background: linear-gradient(to bottom, #130f10 54%, #a89fcc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#130f10', endColorstr='#a89fcc',GradientType=0 );
+  /* IE6-9 */
 }
 
 .entry .entry-content .has-large-font-size {
