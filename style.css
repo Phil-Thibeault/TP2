@@ -686,6 +686,12 @@ body.page .main-navigation {
   }
 }
 
+/*
+Code personnalisé pour tout ce qui a trait à la navigation.
+
+@author Philippe Thibeault
+@version 2019-03-28
+*/
 .main-navigation .menu-nav-principale-container .main-menu li a, .main-navigation .sub-menu .menu-item a {
   color: #800080 !important;
 }
@@ -706,43 +712,43 @@ body.page .main-navigation {
 }
 
 .main-navigation .sub-menu .menu-item:nth-child(1) {
-  -webkit-animation-delay: 0.125s !important;
-          animation-delay: 0.125s !important;
+  -webkit-animation-delay: 0.1875s !important;
+          animation-delay: 0.1875s !important;
 }
 
 .main-navigation .sub-menu .menu-item:nth-child(2) {
-  -webkit-animation-delay: 0.25s !important;
-          animation-delay: 0.25s !important;
-}
-
-.main-navigation .sub-menu .menu-item:nth-child(3) {
   -webkit-animation-delay: 0.375s !important;
           animation-delay: 0.375s !important;
 }
 
+.main-navigation .sub-menu .menu-item:nth-child(3) {
+  -webkit-animation-delay: 0.5625s !important;
+          animation-delay: 0.5625s !important;
+}
+
 .main-navigation .sub-menu .menu-item:nth-child(4) {
-  -webkit-animation-delay: 0.5s !important;
-          animation-delay: 0.5s !important;
-}
-
-.main-navigation .sub-menu .menu-item:nth-child(5) {
-  -webkit-animation-delay: 0.625s !important;
-          animation-delay: 0.625s !important;
-}
-
-.main-navigation .sub-menu .menu-item:nth-child(6) {
   -webkit-animation-delay: 0.75s !important;
           animation-delay: 0.75s !important;
 }
 
+.main-navigation .sub-menu .menu-item:nth-child(5) {
+  -webkit-animation-delay: 0.9375s !important;
+          animation-delay: 0.9375s !important;
+}
+
+.main-navigation .sub-menu .menu-item:nth-child(6) {
+  -webkit-animation-delay: 1.125s !important;
+          animation-delay: 1.125s !important;
+}
+
 .main-navigation .sub-menu .menu-item:nth-child(7) {
-  -webkit-animation-delay: 0.875s !important;
-          animation-delay: 0.875s !important;
+  -webkit-animation-delay: 1.3125s !important;
+          animation-delay: 1.3125s !important;
 }
 
 .main-navigation .sub-menu .menu-item:nth-child(8) {
-  -webkit-animation-delay: 1s !important;
-          animation-delay: 1s !important;
+  -webkit-animation-delay: 1.5s !important;
+          animation-delay: 1.5s !important;
 }
 
 @-webkit-keyframes animLiens {
@@ -918,17 +924,19 @@ http: //krasimirtsonev.com/blog/article/SASS-content-directive-is-a-wonderful-th
 }
 
 .lienArticle img {
-  -webkit-filter: sepia();
-          filter: sepia();
-  -webkit-transition: -webkit-filter 1s;
-  transition: -webkit-filter 1s;
-  transition: filter 1s;
-  transition: filter 1s, -webkit-filter 1s;
+  opacity: 0;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  -webkit-transition: opacity 1s ease-in, -webkit-transform 1s ease-in;
+  transition: opacity 1s ease-in, -webkit-transform 1s ease-in;
+  transition: opacity 1s ease-in, transform 1s ease-in;
+  transition: opacity 1s ease-in, transform 1s ease-in, -webkit-transform 1s ease-in;
 }
 
-.lienArticle img:hover {
-  -webkit-filter: none;
-          filter: none;
+.lienArticle .imgApparait {
+  opacity: 1 !important;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 @media only screen and (min-width: 320px) {

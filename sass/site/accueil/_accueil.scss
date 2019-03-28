@@ -39,12 +39,14 @@
     }
 
     img{
-        filter: sepia();
-        transition: filter 1s;
+        opacity: 0;
+        transform: translateY(-30px);
+        transition: opacity 1s ease-in, transform 1s ease-in;
+    }
 
-        &:hover{
-            filter: none;
-        }
+    .imgApparait{
+        opacity: 1 !important;
+        transform: translateY(0);
     }
 }
 

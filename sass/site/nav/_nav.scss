@@ -1,3 +1,9 @@
+/*
+Code personnalisé pour tout ce qui a trait à la navigation.
+
+@author Philippe Thibeault
+@version 2019-03-28
+*/
 $couleurLien: #800080;
 $couleurHover: #ee5dee;
 $bgLiens: rgba(0, 0, 0, 0.6);
@@ -33,7 +39,7 @@ $bgLiens: rgba(0, 0, 0, 0.6);
                 &:nth-child(#{$i}) {
                     
                     // Delay the animation. Delay increases as items loop.
-                    animation-delay: ($i * (2s / 16)) !important;
+                    animation-delay: ($i * (3s / 16)) !important;
                 }
             }
             a{
