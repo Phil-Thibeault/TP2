@@ -66,8 +66,8 @@
         text-align: center;
     
         img{
-            max-width: 90vw;
-            min-width: 90vw;
+            max-width: 30vw;
+            min-width: 30vw;
         }
     }
 
@@ -79,7 +79,7 @@
 }
 @include media(tablet){
     .lienArticle{
-        font-size: 1.2em;
+        font-size: 0.8em;
         text-align: center;
         margin-right: 15vw;
     

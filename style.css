@@ -961,8 +961,8 @@ http: //krasimirtsonev.com/blog/article/SASS-content-directive-is-a-wonderful-th
     text-align: center;
   }
   .lienArticle img {
-    max-width: 90vw;
-    min-width: 90vw;
+    max-width: 30vw;
+    min-width: 30vw;
   }
   .texte {
     width: 90vw;
@@ -973,7 +973,7 @@ http: //krasimirtsonev.com/blog/article/SASS-content-directive-is-a-wonderful-th
 
 @media only screen and (min-width: 768px) {
   .lienArticle {
-    font-size: 1.2em;
+    font-size: 0.8em;
     text-align: center;
     margin-right: 15vw;
   }
