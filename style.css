@@ -686,12 +686,93 @@ body.page .main-navigation {
   }
 }
 
-.main-navigation .menu-nav-principale-container .menu-nav-principale li a {
-  color: purple;
+.main-navigation .menu-nav-principale-container .main-menu li a, .main-navigation .sub-menu .menu-item a {
+  color: #800080 !important;
 }
 
-.main-navigation .menu-nav-principale-container .menu-nav-principale li a:hover {
+.main-navigation .menu-nav-principale-container .main-menu li a:hover, .main-navigation .sub-menu .menu-item a:hover {
   text-decoration: underline;
+  color: #ee5dee !important;
+}
+
+.main-navigation .sub-menu {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-navigation .sub-menu .menu-item {
+  -webkit-animation: 1s ease 0s animLiens infinite;
+          animation: 1s ease 0s animLiens infinite;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.main-navigation .sub-menu .menu-item:nth-child(1) {
+  -webkit-animation-delay: 0.125s !important;
+          animation-delay: 0.125s !important;
+}
+
+.main-navigation .sub-menu .menu-item:nth-child(2) {
+  -webkit-animation-delay: 0.25s !important;
+          animation-delay: 0.25s !important;
+}
+
+.main-navigation .sub-menu .menu-item:nth-child(3) {
+  -webkit-animation-delay: 0.375s !important;
+          animation-delay: 0.375s !important;
+}
+
+.main-navigation .sub-menu .menu-item:nth-child(4) {
+  -webkit-animation-delay: 0.5s !important;
+          animation-delay: 0.5s !important;
+}
+
+.main-navigation .sub-menu .menu-item:nth-child(5) {
+  -webkit-animation-delay: 0.625s !important;
+          animation-delay: 0.625s !important;
+}
+
+.main-navigation .sub-menu .menu-item:nth-child(6) {
+  -webkit-animation-delay: 0.75s !important;
+          animation-delay: 0.75s !important;
+}
+
+.main-navigation .sub-menu .menu-item:nth-child(7) {
+  -webkit-animation-delay: 0.875s !important;
+          animation-delay: 0.875s !important;
+}
+
+.main-navigation .sub-menu .menu-item:nth-child(8) {
+  -webkit-animation-delay: 1s !important;
+          animation-delay: 1s !important;
+}
+
+@-webkit-keyframes animLiens {
+  0% {
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 1em;
+  }
+  25% {
+    background: rgba(51, 51, 51, 0.6);
+    font-size: 1.1em;
+  }
+  50% {
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 1em;
+  }
+}
+
+@keyframes animLiens {
+  0% {
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 1em;
+  }
+  25% {
+    background: rgba(51, 51, 51, 0.6);
+    font-size: 1.1em;
+  }
+  50% {
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 1em;
+  }
 }
 
 /*--------------------------------------------------------------

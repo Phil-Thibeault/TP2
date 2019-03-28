@@ -1,14 +1,69 @@
+$couleurLien: #800080;
+$couleurHover: #ee5dee;
+$bgLiens: rgba(0, 0, 0, 0.6);
+
+%link {
+    color: $couleurLien !important;
+}
+
+%hover{
+    text-decoration: underline;
+    color: $couleurHover !important;
+}
+
 .main-navigation{
     .menu-nav-principale-container{
-        .menu-nav-principale{
+        .main-menu{
             li{
                 a{
-                    color: purple;
+                    @extend %link;
                     &:hover{
-                        text-decoration: underline;
+                        @extend %hover;
                     }
                 }
             }
         }
     }
+    .sub-menu{
+        background-color: $bgLiens;
+        .menu-item{
+            animation: 1s ease 0s animLiens infinite;
+            background: $bgLiens;
+            @for $i from 1 through 8 {
+                &:nth-child(#{$i}) {
+                    
+                    // Delay the animation. Delay increases as items loop.
+                    animation-delay: ($i * (2s / 16)) !important;
+                }
+            }
+            a{
+                @extend %link;
+                &:hover{
+                    @extend %hover;
+                }
+            }
+        }
+    }
+    button{
+        &:hover{
+            
+        }
+    }
 }
+
+@keyframes animLiens {
+    0% {
+      background: $bgLiens;
+      font-size: 1em;
+    }
+    
+    25% {
+      background: lighten($bgLiens, 20%);
+      font-size: 1.1em;
+    }
+    
+    50% {
+        background: $bgLiens;
+        font-size: 1em;
+    }
+  }
