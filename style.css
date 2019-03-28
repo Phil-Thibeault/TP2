@@ -709,6 +709,11 @@ Code personnalisé pour tout ce qui a trait à la navigation.
           animation: 5s ease 0s animSVG infinite !important;
 }
 
+.main-navigation .svg-icon:hover {
+  -webkit-animation: 2s ease 0s tourneSVG infinite !important;
+          animation: 2s ease 0s tourneSVG infinite !important;
+}
+
 .main-navigation .sub-menu {
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -822,6 +827,28 @@ Code personnalisé pour tout ce qui a trait à la navigation.
   }
   80% {
     color: #CC189F;
+  }
+}
+
+@-webkit-keyframes tourneSVG {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes tourneSVG {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 

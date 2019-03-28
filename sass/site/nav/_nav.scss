@@ -27,6 +27,10 @@ $colorNav5: #CC189F;
     .svg-icon{
         color: $colorNav1;
         animation: 5s ease 0s animSVG infinite !important;
+
+        &:hover{
+            animation: 2s ease 0s tourneSVG infinite !important;
+        }
     }
     .menu-nav-principale-container{
         .main-menu{
@@ -98,5 +102,15 @@ $colorNav5: #CC189F;
 
     80%{
         color: $colorNav5;
+    }
+}
+
+@keyframes tourneSVG{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
     }
 }
